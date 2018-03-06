@@ -1,0 +1,36 @@
+.section-about {
+    
+  &__image {
+    width: 100%;
+  }
+
+  &__textBox {
+    width: 45vw;
+    margin: 0 auto;
+    
+    @include respond(tab-port) {
+      width: 80vw;
+    }
+  }
+
+  &__testimonial {
+    margin: 0 auto;
+
+    &_1 {
+      width: 60vw;
+      
+      @include respond(tab-port) {
+        margin-bottom: 3rem !important;
+      }
+    }
+
+    &_2 {
+      width: 90vw;
+    }
+
+    @include respond(tab-port) {
+      width: 80vw; // MUST BE ON THE BOTTOM TO OVER RULE &--1, &--2
+    }
+  }
+
+  }

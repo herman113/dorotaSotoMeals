@@ -1,0 +1,53 @@
+.section-test2 {
+  background-image: linear-gradient(to bottom right, rgb(27, 16, 185),rgb(25, 5, 80));
+  // height: 100vh;
+  // min-height: 100%;
+  // min-height: 100vh;
+  width: 100vw;
+  // display: flex;
+  // position: fixed;
+  padding: 5.7rem 0 1rem;
+}
+
+// .container {
+//   display: flex;
+// }
+
+.gallery1 {
+  display: flex;
+  width: 95vw;
+  // margin: 5.7rem auto;
+  // margin: 5.7rem auto 0;
+  margin: 0 auto;
+
+  &__photo {
+      width: 100%;
+      display: block;
+  }
+}
+
+// .photo-holder {
+//   width: 95vw;
+//   margin: 0 auto;
+
+//   &__photo {
+//     width: 33.33%;
+//     float: left;
+//   }
+// }
+
+// .clear {
+//   @include clearfix;
+// }
+
+// .gallery4 {
+//   width: 95vw;
+//   margin: 0 auto;
+
+//   &__photo {
+//       width: 33.33%;
+//       float: left;
+//       margin-bottom: 2rem;
+//       display: inline-block;
+//   }
+// }

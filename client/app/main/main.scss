@@ -1,0 +1,225 @@
+.slider {
+	position: relative;
+	margin-top: 6.7rem;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0%);
+	width: 80vw;
+	height: 80vh;
+}
+
+.slider__paragraph {
+	position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 1000;
+  display: none;
+  font-size: 3rem;  
+  letter-spacing: 0;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: capitalize;
+  background-color: rgba($color-white, .7);
+	color: $color-dark-grey;
+}
+
+
+.slider__navigation  {
+	position: absolute;
+	left: 50%;
+  top: 95% !important;
+	transform: translate(-50%, 0);
+  z-index: 1000;
+  font-size: 3rem;
+}
+
+.slider__label_bottom_1,
+.slider__label_bottom_2,
+.slider__label_bottom_3,
+.slider__label_bottom_4 {
+  position: relative;
+  display: inline-block;
+  margin-top: .5rem;
+  background-color: rgba(58, 54, 54, 0.678);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    background-color: rgb(231, 227, 227);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity .2s;
+    // transform: scale(1);
+  }
+}
+
+.slider__image {
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 80vw;
+	height: 80vh;
+	display: none;
+}
+
+.slider__label_prev {
+	position: absolute;
+	left: 1%;
+	top: 50%;
+	color: white;
+	z-index: 1000;
+  display: none;
+  font-size: 7rem;
+}
+
+.slider__label_next {
+	position: absolute;
+	right: 1%;
+	top: 50%;
+	color: white;
+	z-index: 1000;
+  display: none;
+  font-size: 7rem;
+}
+
+.slider__input {
+	display: none;
+}
+
+.slider__input_1:checked ~ .slider__image_1 {
+ display: block;
+}
+.slider__input_1:checked ~ .slider__label_prev_1 {
+ display: block;
+}
+.slider__input_1:checked ~ .slider__label_next_1 {
+ display: block;
+}
+.slider__input_1:checked ~ .slider__paragraph_1 {
+ display: block;
+}
+
+.slider__input_1:checked ~ .slider__navigation .slider__label_bottom_1::after {
+ opacity: 1;
+//  transform: scale(1.1);
+}
+
+
+.slider__input_2:checked ~ .slider__image_2 {
+ display: block;
+}
+.slider__input_2:checked ~ .slider__label_prev_2 {
+ display: block;
+}
+.slider__input_2:checked ~ .slider__label_next_2 {
+ display: block;
+}
+.slider__input_2:checked ~ .slider__paragraph_2 {
+	display: block;
+}
+
+.slider__input_2:checked ~ .slider__navigation .slider__label_bottom_2::after {
+  opacity: 1;
+ }
+
+
+.slider__input_3:checked ~ .slider__image_3 {
+ display: block;
+}
+.slider__input_3:checked ~ .slider__label_prev_3 {
+ display: block;
+}
+.slider__input_3:checked ~ .slider__label_next_3 {
+ display: block;
+}
+.slider__input_3:checked ~ .slider__paragraph_3 {
+	display: block;
+}
+
+.slider__input_3:checked ~ .slider__navigation .slider__label_bottom_3::after {
+  opacity: 1;
+ }
+
+
+.slider__input_4:checked ~ .slider__image_4 {
+ display: block;
+}
+
+.slider__input_4:checked ~ .slider__label_prev_4 {
+ display: block;
+}
+
+.slider__input_4:checked ~ .slider__label_next_4 {
+ display: block;
+}
+.slider__input_4:checked ~ .slider__paragraph_4 {
+	display: block;
+}
+
+.slider__input_4:checked ~ .slider__navigation .slider__label_bottom_4::after {
+  opacity: 1;
+ }
+
+
+@media only screen and (max-width: 900px) {
+  .slider,
+  .slider__image {
+    width: 100vw !important;
+    height: 75vh !important; //why important?
+  }
+
+  .slider__paragraph {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    z-index: 1000;
+    font-size: 2rem;
+    background-color: rgba($color-white, .7);
+    color: $color-dark-grey;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .slider,
+  .slider__image {
+    width: 100vw !important;
+    height: 50vh !important; //why important?
+  }
+
+  .slider__navigation  {
+    position: absolute;
+    left: 50%;
+    top: 93% !important;
+    transform: translate(-50%, 0);
+    z-index: 1000;
+    font-size: 4rem;
+  }
+
+  .slider__paragraph {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+    z-index: 1000;
+    font-size: 2rem;
+    background-color: rgba($color-white, .7);
+    color: $color-dark-grey;
+  }
+
+}

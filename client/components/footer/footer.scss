@@ -1,0 +1,49 @@
+.footer {
+   position: relative;
+   top: 0rem;
+   margin-top: 10rem;
+
+  &__link {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1rem;
+    transition: all 1s;
+
+    &:link,
+    &:visited {
+      color: $color-black;
+      transition: all 1s;
+    }
+  }
+  &__home {
+    position: relative;
+    top: 0rem;
+    margin-top: 0rem;
+  }
+
+}
+
+.fa {
+  font-size: 3rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.fa.fa-facebook-square {
+  background-image: linear-gradient(to top right,#3b5998, #8b9dc3);
+  background: -webkit-linear-gradient(to top right, blue, red);
+ 
+}
+.fa.fa-instagram {
+  background-image: linear-gradient(to top right, #eedc31, #f44747,#0e68ce);
+  background: -webkit-linear-gradient(to top right, #eedc31,#f44747, #0e68ce);
+ 
+}
+

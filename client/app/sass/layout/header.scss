@@ -1,0 +1,23 @@
+// HEADER
+.header {
+  
+  &__textbox {
+
+    @include respond(tab-port) {
+     
+    }
+    
+    &-mailchimp {
+      padding-left: 1rem;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
+
+      @include respond(phone) {
+        text-align: center;
+      }
+    }
+
+  }
+}

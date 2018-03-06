@@ -1,0 +1,28 @@
+.section-menu {
+
+  &__mealBox {
+    margin-left: 10rem;
+
+    @include respond(tab-land) {
+      margin-left: 0;
+      margin-bottom: 6rem;
+    }
+    
+    &_2 {
+      margin-left: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &_list {
+    margin-left: 5rem;
+  }
+
+  &_item {
+    // IN TYPOGRAPHY
+  }
+
+}

@@ -1,0 +1,72 @@
+$fa-font-path: '/assets/fonts/font-awesome/';
+@import '~font-awesome/scss/font-awesome';
+
+// App-wide Styles
+ 
+@import 'sass/abstracts/functions.scss';
+@import './sass/abstracts/mixins.scss';
+@import './sass/abstracts/variables.scss';
+
+@import './sass/base/animations';
+@import './sass/base/base.scss';
+@import './sass/base/typography';
+@import './sass/base/utilities';
+
+@import './sass/components/button.scss';
+
+@import './sass/layout/grid.scss';
+@import './sass/layout/header.scss';
+@import './sass/layout/section.scss';
+
+
+
+// Component styles are injected through gulp
+/* inject:scss */
+
+@import 'about/about';
+
+@import 'coaching/coaching';
+
+@import 'events/events';
+
+@import 'gallery/gallery';
+
+@import 'mailchimp-form/mailchimp-form';
+
+@import 'main/main';
+
+@import 'menu/menu';
+
+@import 'sass/abstracts/functions';
+
+@import 'sass/abstracts/mixins';
+
+@import 'sass/abstracts/variables';
+
+@import 'sass/base/animations';
+
+@import 'sass/base/base';
+
+@import 'sass/base/typography';
+
+@import 'sass/base/utilities';
+
+@import 'sass/components/button';
+
+@import 'sass/layout/grid';
+
+@import 'sass/layout/header';
+
+@import 'sass/layout/section';
+
+@import 'services/services';
+
+@import 'test/test';
+
+@import 'test2/test2';
+
+@import '../components/footer/footer';
+
+@import '../components/navbar/navbar';
+
+/* endinject */

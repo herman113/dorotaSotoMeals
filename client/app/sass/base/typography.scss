@@ -1,0 +1,200 @@
+// TYPOGRAPHY
+body {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 400;
+  color: $color-black;
+}
+.heading-primary { 
+  color: $color-primary-header; //RED
+  text-transform: capitalize;
+  font-size: 4.5rem;
+  font-weight: 100;
+  font-style: normal;
+  font-family: 'freight-big-pro', serif; 
+  margin-bottom: 8rem;
+  letter-spacing: .2rem;
+
+  @include respond(phone) {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4rem;
+  }
+}
+
+.heading-secondary { 
+  color: $color-primary-header;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-style: normal;
+  font-family: 'freight-big-pro', serif;  
+  letter-spacing: .02rem;
+  line-height: 4rem;
+
+  @include respond(tab-port) {
+    text-align: center;
+    margin-bottom: 2rem !important;
+  }
+  
+
+  &--menu {
+    font-size: 3rem;
+  }
+}
+
+.heading-tertiary { 
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  letter-spacing: .3rem;
+
+  @include respond(tab-port) {
+    text-align: center;
+  }
+
+  &-mailchimp {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    // letter-spacing: .3rem;
+    line-height: 2.7rem;
+    // padding: 0 2rem;
+
+    @include respond(tab-port) {
+      
+    }
+  }
+
+}
+
+.paragraph {
+  font-size: 1.6rem;
+  padding-left: 0;
+  letter-spacing: 0;
+  line-height: 3rem;
+  font-family: 'Montserrat', sans-serif;
+
+  @include respond(tab-port) {
+    text-align: left;
+    padding: 2rem 5rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  &__about {
+    @include respond(tab-port) {
+      text-align: left;
+      padding: 0rem 0rem;
+    }
+  } 
+  &__coaching {
+    line-height: 2rem;
+
+    @include respond(tab-port) {
+      text-align: left;
+      padding: 0rem 0rem;
+      
+    }
+  } 
+  
+  &__menu {
+    @include respond(tab-port) {
+      text-align: left;
+      padding: 0rem 5rem;
+    }
+  }
+
+  &__events {
+    @include respond(tab-port) {
+      text-align: left;
+      padding: .5rem 5rem;
+      margin-bottom: 0 !important;
+    }
+
+    &--head {
+      @include respond(tab-port) {
+        display: inline-block;
+        text-align: center;
+        padding: .5rem 2rem .5rem 5rem;
+        margin-bottom: 0 !important;
+        font-size: 2rem;
+        font-style: italic;
+      }
+    }
+  }
+
+}
+
+.caption {
+  padding: .5rem;
+  font-size: 1.6rem;
+}
+
+.section-menu_item {
+  font-size: 1.6rem;
+  padding-left: 0;
+  letter-spacing: 0;
+  line-height: 3rem;
+  font-family: 'Montserrat', sans-serif;
+  
+  @include respond(tab-port) {
+    text-align: left;
+    margin: 0 auto;
+    width: 85%;
+  }
+}
+
+.navigation {
+
+  &__link {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-family: 'Montserrat', sans-serif;
+
+    
+    &_header {
+      font-size: 2.8rem;
+      font-family: 'Playfair Display SC', serif;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0em;
+    }
+
+    &:link,
+    &:visited {
+      color: $color-black;
+    }
+
+    &_header_1 {
+
+      @media (max-width: 900px) {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $color-black;
+        font-size: 2.8rem;
+        font-family: 'Playfair Display SC', serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0em;
+      }  
+
+    }
+    
+
+  }
+  
+}
