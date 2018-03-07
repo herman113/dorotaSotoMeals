@@ -18,6 +18,15 @@
       transition: all 1s;
     }
   }
+
+  // &__row {
+  //   width: 50rem;
+
+  //   @include respond(phone) {
+  //     width: 40rem;
+  //   }
+  // }
+  
   &__home {
     position: relative;
     top: 0rem;
